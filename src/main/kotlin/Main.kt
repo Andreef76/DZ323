@@ -16,10 +16,8 @@ fun main() {
     } else if (totalPrice < 1001) {
         result = totalPrice
     }
+    if (regularCustomer == true) result = (result * 0.99).toInt()
 
-    if (regularCustomer == true) {
-        result = (result * 0.99).toInt()
-    }
 
     println("Total Price: $result")
 }
